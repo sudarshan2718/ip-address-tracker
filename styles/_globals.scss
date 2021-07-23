@@ -10,9 +10,17 @@ html{
 }
 body{
     height: 100vh;
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    footer{
+        margin-top: auto;
+    }
 }
 .attribution {
-    font-size: 11px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -20,7 +28,3 @@ body{
     color: hsl(228, 45%, 44%);
 }
 
-// #map {
-//     width: 70%;
-//     height: 500px;
-// }

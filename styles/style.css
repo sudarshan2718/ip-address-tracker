@@ -1,2 +1,79 @@
+.header {
+  padding: 2rem;
+  text-align: center;
+  background-image: url("../images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 30%;
+}
+.header h1 {
+  font-weight: 500;
+  color: white;
+}
+.header .search {
+  background-color: white;
+  margin-top: 2rem;
+}
+.header .search .ipinput {
+  margin: 0;
+}
+.header .search .arrow {
+  background-color: black;
+  margin: 0;
+}
 
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+.card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+}
+.card h6 {
+  color: #969696;
+}
+
+@media (min-width: 375px) {
+  .card {
+    flex-direction: row;
+  }
+}
+*, *::after, *::before {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body footer {
+  margin-top: auto;
+}
+
+.attribution {
+  font-size: 18px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.content {
+  height: 100%;
+}
+.content #map {
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

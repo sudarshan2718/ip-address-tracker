@@ -15,14 +15,14 @@
 // // fetchLocation(url).then(data => {
 // //     console.log(data)
 // // })
-// let map = L.map('map').setView([20.593683, 78.962883], 5);
+let map = L.map('map').setView([20.593683, 78.962883], 5);
 
-// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-// }).addTo(map);
-// const mapIcon = L.icon({
-//     iconUrl: './images/icon-location.svg', iconSize: [30, 38]
-// }) 
-// L.marker([19.07283,72.88261], {
-//     icon: mapIcon
-// }).addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+const mapIcon = L.icon({
+    iconUrl: './images/icon-location.svg', iconSize: [30, 38]
+}) 
+L.marker([19.07283,72.88261], {
+    icon: mapIcon
+}).addTo(map);

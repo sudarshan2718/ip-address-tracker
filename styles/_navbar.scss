@@ -1,0 +1,43 @@
+@use './variables' as var;
+.header{
+    padding: 2rem;
+    text-align: center;
+    background-image: url('../images/pattern-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 30%;
+    h1{
+        font-weight: 500;
+        color: white;
+    }
+    .search{
+        background-color: white;
+        ;
+        margin-top: 2rem;
+        .ipinput{
+            margin: 0;
+        }
+        .arrow{
+            background-color: black;
+            margin: 0;
+        }
+        
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    h6{
+        color: var.$Dark-Gray;
+    }
+    
+}
+@media(min-width: 375px){
+    .card{
+        flex-direction: row;
+    }
+}

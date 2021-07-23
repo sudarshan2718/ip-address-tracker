@@ -22,23 +22,47 @@
 </head>
 
 <body>
+  <main>
+    <section class='header'>
+      <h1>IP Address Tracker</h1>
+      <div class="search">
+        <input class="ipinput" type="text" placeholder="Search for any IP address or domain">
+        <button class="arrow"><img src="./images/icon-arrow.svg" alt="submit ip"></button>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h6>IP ADDRESS</h6>
+          <span id="ip"></span>
+        </div>
+        <div class="info">
+          <h6>ISP</h6>
+          <span id="isp"></span>
+        </div>
+        <div class="info">
+          <h6>LOCATION</h6>
+          <span id="location"></span>
+        </div>
+        <div class="info">
+          <h6>TIMEZONE</h6>
+          <span id="timezone"></span>
+        </div>
+        <div class="info">
+          <h6>UTC</h6>
+          <span id="utc"></span>
+        </div>
+      </div>
+    </section>
+    <section class='content'>
+      <div id="map"></div>
+    </section>
+  </main>
 
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-  UTC
-  <!-- add offset value dynamically using the API -->
-  ISP
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Sudarshan Vemarapu</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Sudarshan Vemarapu</a>.
+    </div>
+  </footer>
   <script src="./app.js"></script>
 </body>
 
