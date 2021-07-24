@@ -1,43 +1,101 @@
 @use './variables' as var;
-.header{
-    padding: 2rem;
-    text-align: center;
-    background-image: url('../images/pattern-bg.png');
+
+.header {
+ 
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/pattern-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
-    height: 30%;
-    h1{
+    height: 40%;
+    h1 {
         font-weight: 500;
         color: white;
     }
-    .search{
+
+    .search {
+        width: 80%;
         background-color: white;
-        ;
-        margin-top: 2rem;
-        .ipinput{
+        margin-top: 1.5rem;
+        height: 3rem;
+        border-radius: var.$rad;
+        display: flex;
+        padding-left: 1rem;
+        justify-content: space-between;
+        .ipinput {
+            display: inline-block;
             margin: 0;
+            border: none;
+            width: 90%;
+            height: 100%;
+            border-radius: var.$rad 0 0 var.$rad;
+            &:focus {
+                outline: none;
+            }
         }
-        .arrow{
+        // top-left top-right bottom-right bottom-left
+        .ipinput[type="text"] {
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        .arrow {
+            display: inline-block;
             background-color: black;
             margin: 0;
+            border-radius: 0 var.$rad var.$rad 0;
+            height: 100%;
+            width: 3rem;
+            border: none;
+        }
+    }
+    .card {
+        z-index: 1;
+        width: 70%;
+        position: absolute;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: var.$rad;
+        color: black;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem 0;
+        h6 {
+            color: var.$Dark-Gray;
+        }
+        .info {
+            margin: .45rem 0;
+            text-align: center;
+            span {
+                font-size: 1.2rem;
+                margin-top: 3px;
+                font-weight: 500;
+                display: block;
+            }
         }
         
     }
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 50%;
-    h6{
-        color: var.$Dark-Gray;
-    }
     
 }
-@media(min-width: 375px){
-    .card{
-        flex-direction: row;
+@media (min-width: 768px) {
+    .header {
+        height: 25%;
+        .search {
+            width: 30%;
+        }
+        .card {
+            flex-direction: row;
+            .info {
+                padding-right: 2rem;
+                border-right: 2px solid rgba(128, 128, 128, 0.253);
+            }
+        }
     }
+}
+
+@media (min-width: 1440px) {
 }
