@@ -57,7 +57,7 @@ async function sendRequest(){
         }
 
         setTimeout(function() {
-            animate();
+             animate();
             fetchLocation(url).then(data => {
                 ip.innerHTML = data.ipData.ip;
                 isp.innerHTML = data.ipData.isp;
@@ -72,7 +72,7 @@ async function sendRequest(){
             }).catch(function (err) {
                 alert('please try again, network error');
             })
-        },1999)
+        },999)
         animate();
     }
     ipInput.value = '';

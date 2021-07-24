@@ -14,11 +14,12 @@
     }
 }
 .load{
-    
+    position: fixed;
+    top: 1px;
     height: 3px;
     width: 0%;
-    background-color: rgba(0, 238, 255, 0.274);
-    animation: loadAnimation 2000ms ease-in 0ms;
+    background-color: rgba(0, 238, 255, 0.932);
+    animation: loadAnimation 1000ms ease-in 0ms;
 }
 
 @keyframes loadAnimation {
