@@ -88,14 +88,19 @@
   }
   .header .card {
     flex-direction: row;
+    height: 20%;
   }
   .header .card .info {
-    text-align: start;
-    padding: 0 1rem;
+    text-align: left;
+    padding-left: 1.5rem;
+    padding-right: 3rem;
     border-right: 2px solid rgba(128, 128, 128, 0.137);
   }
   .header .card .info:last-child {
     border-right: none;
+  }
+  .header .card .info:nth-child(3) {
+    width: 19rem;
   }
 }
 *, *::after, *::before {
