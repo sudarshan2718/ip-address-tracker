@@ -13,3 +13,20 @@
         height: 100%;
     }
 }
+.load{
+    
+    height: 3px;
+    width: 0%;
+    background-color: rgba(0, 238, 255, 0.274);
+    animation: loadAnimation 2000ms ease-in 0ms;
+}
+
+@keyframes loadAnimation {
+    
+    @for $i from 1 through 100{
+        #{$i}%{
+            width: #{$i}+'%';
+        }
+    }
+    
+}
