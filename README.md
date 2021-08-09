@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://github.com/SUDARSHANVEMARAPU/ip-address-tracker)
-- Live Site URL: [live site](https://sudarshanvemarapu.github.io/ip-address-tracker/)
+- Solution URL: [solution](https://github.com/sudarshan2718/ip-address-tracker)
+- Live Site URL: [live site](https://sudarshan2718.github.io/ip-address-tracker/)
 
 ## My process
 
